@@ -8,9 +8,9 @@
 let hamburger = 3;
 let fries = 3;
 
-if (hamburger >=3 && fries >= 3 ){
+if (hamburger == 3 && fries == 3 ){
     console.log('Ми поїли')
-} else {
+} else if (hamburger < 3 && fries < 3) {
     console.log('Ми йдемо в інше кафе')
 }
 

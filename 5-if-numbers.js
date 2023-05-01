@@ -3,18 +3,17 @@
 //     (не середнє арифметичне значення, а яке з трьох заданих чисел среднє за значенням) використовуючи оператор if-else.
 //     Використати вкладені оператори if
 //     Результат виводити в консоль.
+let d 
+let e 
+let f 
 
-let a = 100
-let b = 200
-let c = 300
 
-if (a >= b){
-    console.log("Error")
-} else if (b >= c){
-    console.log('Error')
-} else if (a >= c){
-    console.log("Error")
-} else{
-    console.log(b)
+if ((d < e && e < f)|| (f > e && e > d)){
+    console.log('Середнє ' + e)
+} else if ((f < d && d < e) || (d < f && d > e)){
+    console.log('Серднє число ' + d)
+} else if ((d < f && f < e) || d > f && f > e){
+    console.log('Середнє значення ' + f)
+} else if (d > e && f < e){
+    console.log('Результат не знайдено ' + e)
 }
-

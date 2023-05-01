@@ -3,19 +3,19 @@
 
 let price = 1500 ;
 
-if (price <= 1000 || price <= 1900){
-    console.log('Ціна товару дорівнює ' + price)
+if (price >= 1000 && price <= 1900){
+    console.log('Ціна товару дорівнює ' + price + ' грн')
 } else {
     console.log('Ціна вища ніж 1900')
 };
 
-if (price < 1000){
-    console.log('Ціна вища ніж 100')
-} else if(price > 1900){
-    console.log('Ціна менше ніж 1900')
-} else if (price == 1500){
-    console.log(price)
-};
+// if (price < 1000){
+//     console.log('Ціна вища ніж 100')
+// } else if(price > 1900){
+//     console.log('Ціна менше ніж 1900')
+// } else if (price == 1500){
+//     console.log(price)
+// };
 
 
 

@@ -4,3 +4,4 @@ someNewText = 'This is the second example'
 console.log(someText.replace(/[aeiouy]/gi, ''))
 console.log(someNewText.replace(/[thscxmplnd]/gi, ''))
 
+
