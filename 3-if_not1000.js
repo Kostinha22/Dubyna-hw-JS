@@ -2,8 +2,10 @@
 //     Реалізуйте два варіанти, один з оператором НЕ !, а інший без цього оператора.
 //     Результат виводити в консоль.
 
-let price = 1999;
+let price = 100;
 
 if (!(price >= 1000 && price <= 1900)){
     console.log(price)
-} 
+} else if (price <= 1000 || price >= 1900){
+    console.log(price)
+}

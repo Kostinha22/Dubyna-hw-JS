@@ -21,9 +21,6 @@ switch(operation){
     case '*':
         console.log(6)
         break; 
-    case '===':
-        console.log('false');
-        break;
     default:
         console.log('Science!') 
         break;         

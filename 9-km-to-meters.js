@@ -2,28 +2,46 @@
 //     так щоб в консоль виводився результат обчислень з правильним закінченням.
 //     Наприклад: 1000 метрів це 1 кілометр;  32 метри це 0,032 кілометра і т.д.
 
-let km = '0.032'
-let m = 32
-let end = 'ів'
-let end1 = 'и'
-let end2 = 'а'
+// 0 => 'ів' 
+// 1 => без закінчення
+// 2, 3, 4 => 'и'
+// 5 і більше => 'ів' 
+// 1.1, 0.1, 0,001, 0,0001 = 'a'
 
 
-if (m == 1000 && km == 1){
-    console.log(m + ` метр${end} це `+ km +' кілометр')
-} else if (m == 32 && km == 0.032) {
-    console.log( `32 метр${end1} це ` + ` 0,032 кілометр${end2}`)
-}
 
-let m1 = 1
-let km1 = m1 / 1000
-console.log(km1)
-
-if (m1 == 32 && km1 == 1){
-    console.log(m1 + ` метр${end} це `+ km1 +' кілометр')
-} else if (m1 == 32 && km1 == 0.032) {
-    console.log( `32 метр${end1} це ` + ` 0,032 кілометр${end2}`)
-}
+let meters = 10000
+let kilometers = meters / 1000;
+let message = '';
+    
+    if (meters === 0) {
+      message = 'Нуль метрів';
+    } else if (meters === 1) {
+      message = '1 метр';
+    } else if (meters % 10 === 1 && meters !== 11) {
+      message = `${meters} метр`;
+    } else if (meters % 10 >= 2 && meters % 10 <= 4 && (meters < 10 || meters > 20)) {
+      message = `${meters} метри`;
+    } else {
+      message = `${meters} метрів`;
+    }
+    
+    if (kilometers >= 1) {
+      if (kilometers === 1) {
+        message += ` це 1 кілометр`;
+      } else if (kilometers % 10 === 1 && kilometers !== 11) {
+        message += ` це ${kilometers} кілометр`;
+      } else if (kilometers % 10 >= 2 && kilometers % 10 <= 4 && (kilometers < 10 || kilometers > 20)) {
+        message += ` це ${kilometers} кілометри`;
+      } else {
+        message += ` це ${kilometers} кілометрів`;
+      }
+    } else {
+      message += ` це ${kilometers} кілометрів`;
+    }
+    
+    console.log(message);
+  
 
 
 
