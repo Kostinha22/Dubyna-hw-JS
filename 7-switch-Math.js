@@ -6,11 +6,11 @@
 let a = 3;
 let b = 2;
 
-let operation = `-`
+let operation = `+`
 
 switch(operation){
     case '+':
-        console.log(3)
+        console.log(5)
         break;
     case '-':
         console.log(1)
