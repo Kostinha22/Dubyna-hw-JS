@@ -4,10 +4,12 @@
 let price = 1500 ;
 
 if (price >= 1000 && price <= 1900){
-    console.log('Ціна товару дорівнює ' + price + ' грн')
-} else {
-    console.log('Ціна вища ніж 1900')
-};
+    console.log(`Ціна товару ${price}`)
+} else if (price < 1000 ){
+    console.log(`Ціна товару нижча ніж 1000`)
+} else if (price > 1900) {
+    console.log(`Ціна товару вища за 1900`)
+}
 
 // if (price < 1000){
 //     console.log('Ціна вища ніж 100')
