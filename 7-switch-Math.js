@@ -3,25 +3,29 @@
 //     Результат виводити в консоль.
 
 
-let a = 3;
-let b = 2;
-
-let operation = `+`
+let a = 234;
+let b = 234;
+let operation = `*`
+let result 
 
 switch(operation){
     case '+':
-        console.log(5)
+        result = a + b;
+        console.log(result)
         break;
     case '-':
-        console.log(1)
+        result = b - a;
+        console.log(result)
         break;
     case '/':
-        console.log(3)
+        result = a / b;
+        console.log(result)
         break;
     case '*':
-        console.log(6)
-        break; 
+        result = a * b
+        console.log(result)
+        break;
     default:
-        console.log('Science!') 
-        break;         
+        console.log('Zero result') 
+       
 }
