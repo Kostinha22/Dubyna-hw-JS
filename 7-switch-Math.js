@@ -5,24 +5,20 @@
 
 let a = 234;
 let b = 234;
-let operation = `*`
+let operation = `-`
 let result 
 
 switch(operation){
-    case '+':
-        result = a + b;
+    case '+': result = a + b;
         console.log(result)
         break;
-    case '-':
-        result = b - a;
+    case '-': result = b - a;
         console.log(result)
         break;
-    case '/':
-        result = a / b;
-        console.log(result)
+    case '/': result = a / b;
+        console.log(result) 
         break;
-    case '*':
-        result = a * b
+    case '*': result = a * b;
         console.log(result)
         break;
     default:

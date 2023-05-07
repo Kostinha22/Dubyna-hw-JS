@@ -2,25 +2,25 @@
 //     За заданим номером вивести назву дня тижня використовуючи switch.
     // Результат виводити в консоль.
 
-    let saturday = 7;
+    let saturday = 3;
     switch(saturday){
         case 1:
             console.log('Sunday')
             break;
         case 2:
-            console.log('Error2')
+            console.log('Monday')
             break;
         case 3:
-            console.log('Error3')
+            console.log('Tuesday')
             break;
         case 4:
-            console.log('Error4')
+            console.log('Wednesday')
             break;
         case 5:
-            console.log('Error5')
+            console.log('Thursday')
             break;
         case 6:
-            console.log('Error6')
+            console.log('Friday')
             break;
         case 7:
             console.log('Saturday')
