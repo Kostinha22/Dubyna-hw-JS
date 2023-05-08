@@ -10,11 +10,12 @@
 
 
 
-let meters = 10000
+let meters 
 let kilometers = meters / 1000;
 let message = '';
     
-    if (meters === 0) {
+function metersToKilometers(meters ,kilometers) {
+     if (meters === 0) {
       message = 'Нуль метрів';
     } else if (meters === 1) {
       message = '1 метр';
@@ -41,6 +42,8 @@ let message = '';
     }
     
     console.log(message);
+  }
+  metersToKilometers()
   
 
 

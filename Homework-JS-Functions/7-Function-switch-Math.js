@@ -8,7 +8,8 @@ let b = 234;
 let operation = `-`
 let result 
 
-switch(operation){
+function math (a, operation, b) {
+    switch(operation){
     case '+': result = a + b;
         console.log(result)
         break;
@@ -25,3 +26,5 @@ switch(operation){
         console.log('Zero result') 
        
 }
+}
+math(3, '+', 4)

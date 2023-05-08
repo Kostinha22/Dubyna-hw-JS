@@ -8,11 +8,14 @@
 let hamburger = 3;
 let fries = 3;
 
-if (hamburger == 3 && fries == 3 ){
+function mcdonalds (hamburger, fries ){
+    if (hamburger == 3 && fries == 3 ){
     console.log('Ми поїли')
 } else if (hamburger < 3 && fries < 3) {
     console.log('Ми йдемо в інше кафе')
-}
+}}
+
+mcdonalds(3,3)
 
 
 
