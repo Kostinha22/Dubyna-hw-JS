@@ -2,7 +2,9 @@
 //     За заданим номером вивести назву дня тижня використовуючи switch.
     // Результат виводити в консоль.
 
-    let day = 3;
+   let day = 3;
+
+   function dayCheck(day){ 
     switch(day){
         case 1:
             console.log('Sunday')
@@ -29,6 +31,8 @@
             console.log('Зараз зима а здається що ніч') 
             break;         
     }
+   }
 
+   dayCheck(5)
 
 

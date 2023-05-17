@@ -4,10 +4,14 @@
 
 let price = 1901;
 
-if (!(price >= 1000 && price <= 1900)){
+function compare (price){
+    if (!(price >= 1000 && price <= 1900)){
     console.log(`Ціна товару ${price}`)
 } else if (price <= 1000 || price >= 1900){
     console.log(`Ціна ${price}`)
 } else {
     console.log(`Ціна в межах від 1000 до 19000`)
 }
+}
+
+compare(100)

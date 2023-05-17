@@ -4,14 +4,18 @@
 let seasonNumber = 3
 
 
-if (seasonNumber == 1){
+function season (seasonNumber){
+    if (seasonNumber == 1) {
     console.log('Winter')
-} else if (seasonNumber == 2){
+} else if (seasonNumber == 2) {
     console.log('Spring')
-} else if (seasonNumber == 3){
+} else if (seasonNumber == 3) {
     console.log('Summer')
 } else if (seasonNumber == 4) {
     console.log('Autumn')
+} else {
+    console.log('there is only 4 seasons of the year')
+}
 }
 
-
+season()
